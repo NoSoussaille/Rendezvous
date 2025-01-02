@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sour Gummy";
+    background-color:rgba(255, 178, 15, 1) ;
+}
+
+header {
+    background-color:rgba(88, 39, 7, 1) ;
+    color: white;
+}
+
+.title1 {
+    background-color: rgba(255, 178, 15, 1) ;
+    text-align: center;
+    margin: 30px;
+}
+
+.title2 {
+    background-color: rgba(151, 45, 7, 1);
+    display: inline-block;
+    font-size: 50px;
+    padding: 30px;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+}
+/* CSS DE LA PAGE DE CONNEXION */
+
+.titleheco {
+    font-size: 80px;
+    text-align: center;
+    padding: 30px;
+}
+
+.co{
+    display: flex;
+    justify-content: center;
+}
+
+#connexion {
+    padding: 50px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.co input[type="email"],
+.co input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: "Sour Gammy";
+}
+
+button{
+    background-color:rgba(255, 75, 62, 1) ;
+    padding: 10px;
+    font-family: "Sour Gummy";
+    font-size: 24px;
+    border-radius: 50px;
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto; /* aligne les bouton au centre */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 425px){
+    .titleheco{
+        font-size: 40px;
+    }
+
+    .title2{
+        font-size: 26px;
+    }
+}
