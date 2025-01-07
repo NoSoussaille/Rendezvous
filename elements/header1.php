@@ -1,5 +1,4 @@
 <?php
-session_start();
 require_once "db_connexion.php";
 ?>
 <!DOCTYPE html>
@@ -14,11 +13,8 @@ require_once "db_connexion.php";
     <title>Rendez-Vous</title>
 </head>
 <body>
-    <header>
-        <h1>Rendez vous</h1>
-        <ul>
-            <li>Mes rendez vous</li>
-            <li>Mon compte</li>
-            <li>Déconnexion</li>
-        </ul>
-    </header>
+    <header class="heconnexion">
+    <a href="connexion.php" style="text-decoration: none;">
+        <h1 class="titleheco">Rendez-vous</h1>
+    </a>
+</header>

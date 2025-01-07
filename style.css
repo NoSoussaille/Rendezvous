@@ -8,6 +8,7 @@
 
 body {
     font-family: "Sour Gummy";
+    font-size: 18px;
     background-color:rgba(255, 178, 15, 1) ;
 }
 
@@ -37,11 +38,18 @@ header {
     font-size: 80px;
     text-align: center;
     padding: 30px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 30px;
+}
+.titleheco:visited{
+    text-decoration: none;
 }
 
 .co{
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 #connexion {
@@ -52,14 +60,16 @@ header {
 }
 
 .co input[type="email"],
+.co input[type="text"],
 .co input[type="password"]{
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
+    margin-top: 5px;
     border: 1px solid black;
     border-radius: 20px;
     font-size: 16px;
-    font-family: "Sour Gammy";
+    font-family: "Sour Gummy";
 }
 
 button{
@@ -78,12 +88,42 @@ button:hover{
     transform: scale(1.1);
 }
 
-@media (max-width: 425px){
+
+
+.Fpassword {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.mdp {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.mdp:hover {
+    color: rgba(255, 75, 62, 1)  ; /* Couleur temporaire pour debug */
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+
+@media (max-width: 580px){
     .titleheco{
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .title2{
-        font-size: 26px;
+        font-size: 25px;
+        padding: 10px;
     }
+.co input[type="email"],
+.co input[type="password"]{
+    width: 100%;
 }
+}
+
