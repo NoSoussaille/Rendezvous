@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         // Prépare la requête pour vérifier l'utilisateur
         $stmt = $mysqli->prepare("
-            SELECT id, password 
+            SELECT id, password, role
             FROM utilisateurs 
             WHERE email = ?
             LIMIT 1
@@ -21,9 +21,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if ($result->num_rows > 0) {
             $user = $result->fetch_assoc();
 
+
             // Vérifie le mot de passe
             if (password_verify($password, $user['password'])) {
                 $_SESSION['user_id'] = $user['id'];
+                $_SESSION['role'] = $user['role'];
                 header("Location: accueil.php"); // Redirection en cas de succès
                 exit();
             } else {

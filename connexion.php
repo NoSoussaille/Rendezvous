@@ -1,10 +1,11 @@
 <?php
+require_once "db_connexion.php";
 require_once "elements/header1.php";
 ?>
     <div class="title1">
         <h1 class="title2">La prise de Rendez-vous facilitée</h1>
     </div>
-    <form action="login.php" method="post" class="co">
+    <form action="login.php" method="POST" class="co">
         <fieldset id="connexion">
             <div style="padding-bottom: 20px; font-size: 36px; text-align:center;"><h3>Connexion</h3></div>
             <?php if (isset($_GET['error']) && $_GET['error'] == 1): ?>

@@ -1,0 +1,157 @@
+/* --- Import de la police si besoin --- */
+/* @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sour Gummy', cursive;
+    background-color: #ffb20f;
+    color: #000; /* Couleur par défaut du texte, attention aux overrides ! */
+}
+
+/* ========== HEADER ========== */
+.header-container {
+    background-color: #582707; /* marron foncé */
+    padding: 10px 20px;
+}
+
+/* 
+   On cible précisément le lien dans le h1.
+   Si tu constates qu'il reste noir, tu peux ajouter !important 
+   pour forcer la couleur blanche.
+*/
+.header-title a,
+.header-title a:visited {
+    color: white !important;
+    text-decoration: none;
+}
+
+/* 
+   .header-content gère le positionnement 
+   (titre à gauche, burger/menus à droite).
+*/
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Titre du site */
+.header-title {
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    /* Couleur du texte si pas de lien */
+    color: white;
+}
+
+/* ========== BOUTON BURGER ========== */
+.menu-toggle {
+    /* Caché en grand écran, affiché en mobile plus bas */
+    display: none;
+    font-size: 28px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* ========== NAVIGATION ========== */
+.navigation-menu {
+    display: flex; 
+    align-items: center;
+    gap: 25px;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espace horizontal entre items */
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    margin: 0;
+}
+
+/* Liens du menu forcés en blanc par défaut */
+.menu-link {
+    text-decoration: none;
+    color: white !important;   /* Couleur blanche par défaut */
+    font-size: 26px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* 
+   Au survol, on veut le texte en noir 
+   et un fond "rouge/orange".
+*/
+.menu-link:hover {
+    background-color: rgba(255, 75, 62, 1);
+    color: black !important;  
+}
+
+/* ========== RESPONSIVE (max-width: 768px) ========== */
+@media (max-width: 1200px) {
+    .menu-toggle {
+        display: block; /* On affiche le burger sur mobile */
+    }
+
+    /* On masque le menu horizontal tant que .active n'est pas présente */
+    .navigation-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 65px; /* Ajuste selon la hauteur de ton header */
+        right: 0;
+        width: 100%;
+        background-color: #582707;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        padding: 15px;
+        animation: fadeIn 0.3s ease-in-out;
+        z-index: 999;
+    }
+
+    .header-title{
+        font-size: 35px;
+    }
+
+    .menu-toggle{
+        font-size: 28px;
+    }
+
+    .navigation-menu.active {
+        display: flex;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Petit effet d'apparition pour le menu déroulant */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
