@@ -25,8 +25,8 @@ $role = $_SESSION['role'] ?? null;
         <nav class="navigation-menu">
             <ul class="menu-list">
                 <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'utilisateur'): ?>
-                    <li class="menu-item"><a href="#" class="menu-link">Mes rendez-vous</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Mon compte</a></li>
+                    <li class="menu-item"><a href="utilisateurRDV.php" class="menu-link">Mes rendez-vous</a></li>
+                    <li class="menu-item"><a href="moncompte.php" class="menu-link">Mon compte</a></li>
                     <li class="menu-item"><a href="logout.php" class="menu-link">Déconnexion</a></li>
                 <?php endif; ?>
 

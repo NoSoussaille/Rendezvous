@@ -289,7 +289,7 @@ body {
     padding: 8px 12px;
     border: 1px solid rgba(151, 45, 7, 1);
     border-radius: 5px;
-    color: rgba(151, 45, 7, 1);
+    color: black;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -369,4 +369,163 @@ body {
         margin-top: 10px;
     }
     
+}
+
+/* PAGE D'ACCUEIL */
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.message-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.message-success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #c3e6cb;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.message-error {
+    background-color: #f8d7da;
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #f5c6cb;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Global styles for the form */
+.appointment-form {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid rgba(151, 45, 7, 1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styles */
+.form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Input and select styles */
+.form-input {
+    padding: 10px;
+    border: 1px solid rgba(151, 45, 7, 1);
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Button styles */
+.form-button {
+    background-color: rgba(255, 75, 62, 1);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-button:hover {
+    background-color: rgba(200, 50, 50, 1);
+    transform: scale(1.05);
+}
+
+/* Focus styles */
+.form-input:focus {
+    outline: none;
+    border-color: rgba(255, 75, 62, 1);
+    box-shadow: 0 0 5px rgba(255, 75, 62, 0.5);
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    .appointment-form {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .form-input, .form-button {
+        font-size: 14px;
+    }
+}
+
+/* PAGE MON COMPTE */
+
+.account-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.account-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.account-title {
+    font-size: 24px;
+    color: rgba(151, 45, 7, 1);
+    margin-bottom: 20px;
+}
+
+.account-info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.delete-button {
+    background-color: rgba(255, 75, 62, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: rgba(200, 45, 35, 1);
+}
+
+.account-error {
+    color: red;
+    font-size: 14px;
+    margin-top: 20px;
 }
