@@ -155,3 +155,218 @@ body {
         transform: translateY(0);
     }
 }
+
+/* STYLE DES TABLEAUX */
+
+/* Conteneur du tableau */
+.table-container {
+    background-color: rgba(151, 45, 7, 1);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 90%;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre du tableau */
+.table-title {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Tableau stylisé */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* En-têtes du tableau */
+.styled-table thead th {
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(151, 45, 7, 1);
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+/* Lignes du tableau */
+.styled-table tbody tr {
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+/* Cellules du tableau */
+.styled-table td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(151, 45, 7, 1);
+}
+
+/* Boutons d'action */
+.cta-button {
+    background-color: rgba(255, 75, 62, 1);
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: rgba(200, 50, 45, 1);
+    transform: scale(1.1);
+}
+
+/* Statut annulé */
+.annule {
+    color: rgba(255, 75, 62, 1);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Conteneur de la barre de recherche */
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Champ de recherche */
+.search-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgba(151, 45, 7, 1);
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: rgba(255, 75, 62, 1);
+}
+
+/* Bouton de recherche */
+.search-button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(151, 45, 7, 1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: rgba(255, 75, 62, 1);
+}
+
+
+.pagination {
+    text-align: center;
+}
+
+.pagination-link {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: 1px solid rgba(151, 45, 7, 1);
+    border-radius: 5px;
+    color: rgba(151, 45, 7, 1);
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination-link:hover {
+    background-color: rgba(151, 45, 7, 1);
+    color: white;
+}
+
+.pagination-link.active {
+    background-color: rgba(151, 45, 7, 1);
+    color: white;
+    font-weight: bold;
+}
+
+/* Style pour les petits écrans */
+@media (max-width: 850px) {
+    /* Conteneur du tableau */
+    .table-container {
+        padding: 10px;
+    }
+
+    /* Tableau transformé pour mobile */
+    .styled-table {
+        display: table;
+        width: 100%;
+        overflow-x: auto; /* Permet le défilement horizontal si nécessaire */
+        border: 0; /* Supprime les bordures externes */
+    }
+
+    /* Masque les en-têtes du tableau */
+    .styled-table thead {
+        display: none;
+    }
+
+    /* Chaque ligne devient un bloc */
+    .styled-table tbody tr {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 10px;
+        background-color: white;
+        border: 1px solid rgba(151, 45, 7, 1);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    /* Chaque cellule devient un bloc avec titre */
+    .styled-table td {
+
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px;
+        font-size: 18px; /* Réduit la taille du texte */
+    }
+
+    /* Style des titres (pseudo-en-têtes) */
+    .styled-table td:before {
+        content: attr(data-label); /* Utilise l'attribut data-label */
+        font-weight: bold;
+        color: rgba(151, 45, 7, 1); /* Couleur brun foncé */
+        flex: 1;
+    }
+
+    /* Boutons d'action */
+    .cta-button {
+        width: 100%;
+        font-size: 18px;
+        margin-top: 10px;
+        color: #000;
+    }
+
+    /* Statut annulé */
+    .annule {
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+    }
+    
+}

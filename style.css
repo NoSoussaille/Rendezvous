@@ -61,6 +61,7 @@ header {
 
 .co input[type="email"],
 .co input[type="text"],
+.co input[type="tel"],
 .co input[type="password"]{
     width: 100%;
     padding: 10px;

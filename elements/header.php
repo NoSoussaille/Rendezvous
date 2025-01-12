@@ -31,8 +31,8 @@ $role = $_SESSION['role'] ?? null;
                 <?php endif; ?>
 
                 <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'): ?>
-                    <li class="menu-item"><a href="#" class="menu-link">Gestion rendez-vous</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Gestion clients</a></li>
+                    <li class="menu-item"><a href="gestionrdv.php" class="menu-link">Gestion rendez-vous</a></li>
+                    <li class="menu-item"><a href="gestionclients.php" class="menu-link">Gestion clients</a></li>
                     <li class="menu-item"><a href="logout.php" class="menu-link">Déconnexion</a></li>
                 <?php endif; ?>
                 <?php if (!isset($_SESSION['role'])): ?>
