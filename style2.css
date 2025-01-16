@@ -105,7 +105,7 @@ body {
     color: black !important;  
 }
 
-/* ========== RESPONSIVE (max-width: 768px) ========== */
+
 @media (max-width: 1200px) {
     .menu-toggle {
         display: block; /* On affiche le burger sur mobile */

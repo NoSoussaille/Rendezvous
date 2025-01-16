@@ -187,4 +187,13 @@ if ($role === 'admin') {
             timeSelect.innerHTML = "<option value=''>Erreur, veuillez réessayer</option>";
         }
     });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const burgerMenu = document.getElementById('burger-menu');
+        const navMenu = document.querySelector('.navigation-menu');
+
+        burgerMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active'); // Affiche/Cache le menu
+        });
+    });
 </script>
