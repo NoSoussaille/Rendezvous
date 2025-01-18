@@ -41,6 +41,9 @@ $query = "
 ";
 $result = $mysqli->query($query);
 ?>
+<div style="text-align: center; margin-top: 20px;">
+    <a href="statistiqueRDV.php" class="form-button" style="text-decoration: none; font-size:24px; color: black;">Voir les statistiques des rendez-vous</a>
+</div>
 <div class="table-container">
     <h3 class="table-title">Gestion des rendez-vous</h3>
     <table class="styled-table">

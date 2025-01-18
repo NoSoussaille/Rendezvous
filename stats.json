@@ -1,0 +1,54 @@
+[
+    {
+        "service_id": 1,
+        "service_name": "Médecine douce",
+        "description": "Consultations pour des soins naturels.",
+        "statistics": {
+            "total_appointments": 120,
+            "monthly_breakdown": {
+                "2025-01": 10,
+                "2025-02": 15,
+                "2025-03": 20
+            }
+        }
+    },
+    {
+        "service_id": 2,
+        "service_name": "Thérapie",
+        "description": "Sessions pour accompagner le bien-être psychologique.",
+        "statistics": {
+            "total_appointments": 85,
+            "monthly_breakdown": {
+                "2025-01": 8,
+                "2025-02": 12,
+                "2025-03": 15
+            }
+        }
+    },
+    {
+        "service_id": 3,
+        "service_name": "Suivi diététique",
+        "description": "Plan alimentaire personnalisé.",
+        "statistics": {
+            "total_appointments": 95,
+            "monthly_breakdown": {
+                "2025-01": 9,
+                "2025-02": 14,
+                "2025-03": 18
+            }
+        }
+    },
+    {
+        "service_id": 4,
+        "service_name": "Entretien organe féminin",
+        "description": "Soins et conseils pour la santé féminine.",
+        "statistics": {
+            "total_appointments": 70,
+            "monthly_breakdown": {
+                "2025-01": 7,
+                "2025-02": 10,
+                "2025-03": 12
+            }
+        }
+    }
+]

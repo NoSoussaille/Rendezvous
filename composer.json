@@ -1,0 +1,17 @@
+{
+    "name": "marwane/rendezvous",
+    "autoload": {
+        "psr-4": {
+            "Marwane\\Rendezvous\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "NoSoussaille",
+            "email": "marwane.belhadi@hotmail.com"
+        }
+    ],
+    "require": {
+        "mongodb/mongodb": "^1.20"
+    }
+}

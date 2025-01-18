@@ -529,3 +529,69 @@ body {
     font-size: 14px;
     margin-top: 20px;
 }
+
+.stat-total {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.stat-total h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.stat-total p {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.table-subtitle {
+    margin-top: 30px;
+    font-size: 1.3rem;
+    color: white;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.tabs .tab {
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.tabs .tab:hover {
+    background-color: #0056b3;
+}
+
+.tabs .tab.active {
+    background-color: #0056b3;
+    cursor: default;
+}
+
+.sync-message {
+    text-align: center;
+    color: white;
+    margin: 10px; 
+}
