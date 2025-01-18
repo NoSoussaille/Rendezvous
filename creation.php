@@ -1,7 +1,7 @@
 <?php
 require_once 'elements/header1.php';
 ?>
-<form action="#" method="post" class="co" style="margin-top: 50px;" onsubmit="return validatePasswords()">
+<form action="addutilisateur.php" method="post" class="co" style="margin-top: 50px;" onsubmit="return validatePasswords()">
     <fieldset id="connexion">
         <div style="padding-bottom: 20px; font-size: 36px; text-align:center;">
             <h3>Création de compte</h3>
